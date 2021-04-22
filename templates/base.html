@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Welcome to ABC Musical Store{% endblock %}</title>
+</head>
+<body>
+
+<nav>
+    <a href="{%url 'home'%}">Home</a>
+    <a href="{%url 'author'%}">Contact</a>
+    <a href="{%url 'music_detail_list'%}">Music Management</a>
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+<hr>
+
+{% block footer %}
+    MidExam -IDS 2021
+{% endblock %}
+
+</body>
+</html>
